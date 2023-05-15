@@ -23,7 +23,7 @@ void analyze(const unsigned char data[],int size){
 void sortData(unsigned char data[], int size) {
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
-            if (data[j] > data[j + 1]) {
+            if (data[j] < data[j + 1]) {
                 unsigned char temp = data[j];
                 data[j] = data[j+1];
                 data[j+1] = temp;
